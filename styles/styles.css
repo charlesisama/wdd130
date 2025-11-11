@@ -11,11 +11,6 @@ main{
 
 }
 
-main img{
-    width: 150px;
-    height: auto;
-}
-
 aside {
     width: 20rem;
     margin: 1rem;
@@ -38,6 +33,14 @@ img{
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+}
+
+main img {
+  width: 200px;
+  height: auto;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  padding: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 p{padding: 0;}
