@@ -1,6 +1,6 @@
 :root{
     --primary-color: white;
-    --headers-color: #055a05;
+    --headers-color: darkblue;
     --accent1-color: #264653;
     --accent-color2: #e9c46a;
     --heading-font: "Times New Roman", "Georgia", serif;
@@ -23,19 +23,18 @@ body{
     font-family: var(--body-font);
     color: var(--accent1-color);
     background-color: #f9f9f9;
-    line-height: 1.6;
 }
 
 section {
-    max-width: 840px;
+    max-width: 100%;
     margin: 1rem auto;
-    padding: 1rem;
+    padding: 0;
     background-color: var(--primary-color);
     border-radius: 8px;
 }
 
 header, main, footer {
-    max-width: 840px;
+    width: 840px;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -46,7 +45,7 @@ h1, h2 {
 }
 
 nav, p, section, article{
-    margin: 16px;
+    margin: 16px 16px 0;
     padding: 8px;
 }
 
@@ -73,7 +72,7 @@ nav, p, section, article{
     text-align: center;
     opacity: 0.9;
     background-color: var(--accent-color2);
-    color: white;
+    color: var(--headers-color);
 }
 
 .hero article{
@@ -82,7 +81,7 @@ nav, p, section, article{
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 1rem;
+    padding: 0;
     margin: 0;
     opacity: 0.9;
 }
@@ -90,6 +89,9 @@ nav, p, section, article{
 .hero article img {
     float: right;
     width: 125px;
+    height: auto;
+    margin: 0;
+    padding: 0;
 }
 
 h2{
@@ -97,15 +99,16 @@ h2{
     background-color: var(--accent-color2);
     padding: 10px;
     margin: 10px;
-    color: var(--primary-color);
+    color: var(--headers-color);
+    width: 100%;
+}
     
 
 footer {
-    border-top: 2px solid var(--accent1-color);
+    border-top: 2px solid gray;
     text-align: center;
-    padding: 1rem 0;
-    background: var(--accent1-color);
-    color: var(--primary-color);
+    padding: 0;
+    color: var(--accent1-color);
 }
 
 
