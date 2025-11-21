@@ -115,8 +115,12 @@ h2{
 footer {
     border-top: 2px solid gray;
     text-align: center;
-    padding: 0;
     color: var(--accent1-color);
+    display: flex;
+    justify-content: space-between;   /* text left, icons right */
+    align-items: center;
+    padding: 1.5rem 2rem;
+    margin-top: 3rem;
 }
 
 
@@ -146,7 +150,7 @@ nav ul li a {
 
 /* Wrapper containing H2 + image (floated as one unit) */
 .history-group {
-    float: left;
+    float: center;
     width: 260px;                 /* Adjust to match image size */
     text-align: center;           /* Centers h2 + image */
     margin: 0 1.5rem 1.5rem 0;    /* Space from wrapped text */
