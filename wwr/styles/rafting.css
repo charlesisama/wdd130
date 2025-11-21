@@ -24,6 +24,11 @@ header{
     border-bottom: 5px solid #e9c46a; 
 }
 
+header img {
+    height: 70px;          
+    width: auto;
+    border-radius: 8px;
+}
 body{
     font-family: var(--body-font);
     color: var(--accent1-color);
