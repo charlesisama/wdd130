@@ -110,3 +110,18 @@ footer {
 }
 
 
+nav ul {
+    display: flex;
+    justify-content: flex-end;  /* pushes links to the right */
+    align-items: center;
+    gap: 1.5rem;                /* space between the li */
+    list-style: none;           /* remove bullets */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
