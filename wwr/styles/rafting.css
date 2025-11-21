@@ -133,4 +133,50 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     font-weight: 600;
+    color: darkblue;
+}
+
+/* Whole box around History section */
+.history {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+
+/* Wrapper containing H2 + image (floated as one unit) */
+.history-group {
+    float: left;
+    width: 260px;                 /* Adjust to match image size */
+    text-align: center;           /* Centers h2 + image */
+    margin: 0 1.5rem 1.5rem 0;    /* Space from wrapped text */
+}
+
+
+/* Centered heading */
+.history-group h2 {
+    margin-bottom: 0.5rem;
+}
+
+
+/* Image under the heading */
+.history-group img {
+    width: 100%;                  /* Fit the wrapper */
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* Body text wraps around group automatically */
+.history p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+
+/* Clear float when section ends */
+.history::after {
+    content: "";
+    display: block;
+    clear: both;
 }
