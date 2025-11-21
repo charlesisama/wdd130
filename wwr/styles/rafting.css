@@ -17,6 +17,11 @@
 header{
     background-color: var(--primary-color);
     color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 1rem 3rem;
+    border-bottom: 5px solid #e9c46a; 
 }
 
 body{
