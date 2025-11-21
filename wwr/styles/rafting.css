@@ -117,10 +117,10 @@ footer {
 
 nav ul {
     display: flex;
-    justify-content: flex-end;  /* pushes links to the right */
+    justify-content: flex-end;  
     align-items: center;
-    gap: 1.5rem;                /* space between the li */
-    list-style: none;           /* remove bullets */
+    gap: 1.5rem;                
+    list-style: none;           
     margin: 0;
     padding: 0;
 }
