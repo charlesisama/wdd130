@@ -264,11 +264,11 @@ form {
     gap: 0.5rem;
 }
 
-.form-item label input[type="checkbox"]{
+/*.form-item label input[type="checkbox"]{
     margin-right: 0.5rem;
     margin-left: 0;
     vertical-align: middle;
-}
+} */
 
 /* Make these items span full width when needed */
 .column2 {
