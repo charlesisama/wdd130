@@ -122,7 +122,6 @@ h2{
     
 
 footer {
-    display: flex;
     border-top: 2px solid gray;
     text-align: center;
     color: var(--accent1-color);
@@ -249,7 +248,7 @@ form {
     border-radius: 8px;
     margin-top: 2rem;
     flex: 1 1 48%;
-    margin-top: 0;
+
 }
 
 /* Form items */
