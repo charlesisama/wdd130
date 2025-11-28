@@ -224,3 +224,117 @@ footer.socialmedia {
     justify-content: flex-end;
     gap: 1rem;
 }
+
+footer .socialmedia img {
+    width: 32px;
+}
+
+
+/* contact page styling */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    flex: 1 1 48%;
+    margin-top: 0;
+}
+
+/* Form items */
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Make these items span full width when needed */
+.column2 {
+    grid-column: span 2;
+}
+
+/* Text inputs and textarea styling */
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+/* Radio buttons spacing */
+.form-item input[type="radio"] {
+    margin-right: 0.5rem;
+    margin-left: 0;
+}
+
+/* Submit button full width */
+form button {
+    grid-column: span 2;
+    padding: 1rem;
+    background-color: var(--accent1-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--accent-color2);
+}
+
+/* Contact page Map */
+.map{
+    flex: 1 1 48%;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    border: none;
+    margin-top: 2rem;
+    border-radius: 8px;
+}
+
+/* Contact page employee images section */
+.image {
+    margin-top: 3rem;
+}
+
+.image h2 {
+    margin-bottom: 1.5rem;
+}
+
+/* 3-column grid for employee profiles */
+.image .adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+/* Style each employee box */
+.image figure {
+    text-align: center;
+}
+
+.image figure img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.address h1 {
+    text-align: center;
+}
