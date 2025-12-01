@@ -57,14 +57,6 @@ header, main, footer {
     padding: 1rem;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2rem;
-}
-
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--headers-color);
@@ -265,7 +257,7 @@ form {
 
 }
 
-/* Form items */
+/* Form items 
 .form-item {
     display: flex;
     flex-direction: row;
@@ -276,6 +268,27 @@ form {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+} */
+
+.form-item {
+    display: contents;
+}
+
+.form-item label {
+    grid-column: 1 / 2;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.form-item input,
+.form-item textarea {
+    grid-column: 2 / 3;
+    width: 100%;
+}
+
+.form-item p {
+    grid-column: 1 / 2;
 }
 
 .form-item label input[type="checkbox"]{
@@ -358,11 +371,12 @@ form button:hover {
     border-radius: 8px;
 }
 
-main{
+main {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
     justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
 }
 
 .address{
