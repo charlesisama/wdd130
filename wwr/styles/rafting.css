@@ -257,7 +257,7 @@ form {
 
 }
 
-/* Form items 
+/* Form items */
 .form-item {
     display: flex;
     flex-direction: row;
@@ -268,28 +268,9 @@ form {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-} */
-
-.form-item {
-    display: contents;
 }
 
-.form-item label {
-    grid-column: 1 / 2;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
 
-.form-item input,
-.form-item textarea {
-    grid-column: 2 / 3;
-    width: 100%;
-}
-
-.form-item p {
-    grid-column: 1 / 2;
-}
 
 .form-item label input[type="checkbox"]{
     margin-right: 0.5rem;
