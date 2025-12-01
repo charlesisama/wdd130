@@ -57,6 +57,14 @@ header, main, footer {
     padding: 1rem;
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--headers-color);
@@ -239,6 +247,12 @@ footer .socialmedia img {
 
 
 /* contact page styling */
+
+.map{
+    flex: 1 1 48%;
+}
+
+
 form {
     /* display: grid;
     grid-template-columns: 1fr 1fr; */
@@ -308,9 +322,6 @@ form button:hover {
 }
 
 /* Contact page Map */
-.map{
-    flex: 1 1 48%;
-}
 
 .map iframe {
     width: 100%;
