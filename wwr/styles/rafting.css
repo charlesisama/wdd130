@@ -13,6 +13,13 @@
     box-sizing: border-box;  
 }  
 
+body {  
+    font-family: var(--body-font);  
+    color: var(--accent1-color);  
+    line-height: 1.6;  
+    font-size: 16px;  
+}  
+
 header {  
     background-color: var(--primary-color);  
     color: var(--accent1-color);  
@@ -20,7 +27,7 @@ header {
     grid-template-columns: auto 1fr;  
     align-items: center;  
     padding: 1rem 3rem;  
-    border-bottom: 5px solid #e9c46a;  
+    border-bottom: 5px solid var(--accent-color2);  
 }  
 
 header img {  
@@ -29,11 +36,31 @@ header img {
     border-radius: 8px;  
 }  
 
-body {  
-    font-family: var(--body-font);  
-    color: var(--accent1-color);  
-    line-height: 1.6;  
-    font-size: 16px;  
+nav ul {  
+    display: flex;  
+    justify-content: flex-end;  
+    align-items: center;  
+    gap: 1.5rem;  
+    list-style: none;  
+}  
+
+nav ul li a {  
+    text-decoration: none;  
+    font-weight: 600;  
+    color: var(--headers-color);  
+}  
+
+h1, h2 {  
+    font-family: var(--heading-font);  
+    color: var(--headers-color);  
+}  
+
+h2 {  
+    text-align: center;  
+    background-color: var(--accent-color2);  
+    padding: 10px;  
+    margin: 10px 0;  
+    width: 100%;  
 }  
 
 section {  
@@ -42,27 +69,6 @@ section {
     padding: 0;  
     background-color: var(--primary-color);  
     border-radius: 8px;  
-}  
-
-header, main, footer {  
-    max-width: 840px;  
-    width: 100%;  
-    margin: 0 auto;  
-    padding: 1rem;  
-}  
-
-h1, h2 {  
-    font-family: var(--heading-font);  
-    color: var(--headers-color);  
-}  
-
-nav, p, section, article {  
-    margin: 16px 16px 0;  
-    padding: 8px;  
-}  
-
-.socialmedia a {  
-    text-decoration: none;  
 }  
 
 .hero {  
@@ -101,22 +107,10 @@ nav, p, section, article {
     float: right;  
     width: 125px;  
     height: auto;  
-    margin: 0;  
-    padding: 0;  
-}  
-
-h2 {  
-    text-align: center;  
-    background-color: var(--accent-color2);  
-    padding: 10px;  
-    margin: 10px;  
-    color: var(--headers-color);  
-    width: 100%;  
 }  
 
 footer {  
     border-top: 2px solid gray;  
-    text-align: center;  
     color: var(--accent1-color);  
     display: flex;  
     justify-content: space-between;  
@@ -125,20 +119,51 @@ footer {
     margin-top: 3rem;  
 }  
 
-nav ul {  
+footer .socialmedia {  
     display: flex;  
     justify-content: flex-end;  
-    align-items: center;  
-    gap: 1.5rem;  
-    list-style: none;  
-    margin: 0;  
-    padding: 0;  
+    gap: 1rem;  
 }  
 
-nav ul li a {  
-    text-decoration: none;  
+footer .socialmedia img {  
+    width: 32px;  
+}  
+
+.adventures {  
+    padding: 2rem;  
+    background-color: #f9f9f9;  
+}  
+
+.adventures h2 {  
+    text-align: center;  
+    margin-bottom: 2rem;  
+}  
+
+.adventure-grid {  
+    display: grid;  
+    grid-template-columns: repeat(5, 1fr);  
+    gap: 1.5rem;  
+}  
+
+.adventure-grid figure {  
+    text-align: center;  
+    background-color: white;  
+    padding: 1rem;  
+    border-radius: 10px;  
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);  
+}  
+
+.adventure-grid img {  
+    width: 100%;  
+    height: 160px;  
+    object-fit: cover;  
+    border-radius: 8px;  
+}  
+
+.adventure-grid figcaption {  
+    margin-top: 0.5rem;  
     font-weight: 600;  
-    color: darkblue;  
+    color: #333;  
 }  
 
 .history {  
@@ -171,53 +196,9 @@ nav ul li a {
     clear: both;  
 }  
 
-.adventures {  
-    padding: 2rem;  
-    background-color: #f9f9f9;  
-}  
-
-.adventures h2 {  
-    text-align: center;  
-    margin-bottom: 2rem;  
-    color: var(--headers-color);  
-}  
-
-.adventure-grid {  
-    display: grid;  
-    grid-template-columns: repeat(5, 1fr);  
-    gap: 1.5rem;  
-}  
-
-.adventure-grid figure {  
-    text-align: center;  
-    background-color: white;  
-    padding: 1rem;  
-    border-radius: 10px;  
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);  
-}  
-
-.adventure-grid img {  
-    width: 100%;  
-    height: 160px;  
-    object-fit: cover;  
-    border-radius: 8px;  
-}  
-
-.adventure-grid figcaption {  
-    margin-top: 0.5rem;  
-    font-weight: 600;  
-    color: #333;  
-}  
-
-footer.socialmedia {  
-    display: flex;  
-    justify-content: flex-end;  
-    gap: 1rem;  
-}  
-
-footer .socialmedia img {  
-    width: 32px;  
-}  
+/******************************
+   Contact Page Styling
+******************************/  
 
 .contact-wrapper {  
     display: flex;  
@@ -228,8 +209,30 @@ footer .socialmedia img {
     width: 100%;  
 }  
 
+main {  
+    display: flex;  
+    flex-wrap: wrap;  
+    justify-content: space-between;  
+    align-items: flex-start;  
+    gap: 2rem;  
+}  
+
+.address {  
+    text-align: center;  
+    max-width: 600px;  
+    margin: 0 auto 2rem;  
+}  
+
 .map {  
     flex: 1 1 48%;  
+}  
+
+.map iframe {  
+    width: 100%;  
+    height: 100%;  
+    min-height: 380px;  
+    border: none;  
+    border-radius: 8px;  
 }  
 
 form {  
@@ -239,7 +242,6 @@ form {
     background: #f9f9f9;  
     padding: 2rem;  
     border-radius: 8px;  
-    margin-top: 2rem;  
     flex: 1 1 48%;  
 }  
 
@@ -255,7 +257,8 @@ form {
     gap: 0.5rem;  
 }  
 
-.form-item label input[type="checkbox"] {  
+.form-item input[type="checkbox"],  
+.form-item input[type="radio"] {  
     margin-right: 0.5rem;  
     margin-left: 0;  
     vertical-align: middle;  
@@ -274,11 +277,6 @@ textarea {
     font-size: 1rem;  
 }  
 
-.form-item input[type="radio"] {  
-    margin-right: 0.5rem;  
-    margin-left: 0;  
-}  
-
 form button {  
     grid-column: span 2;  
     padding: 1rem;  
@@ -292,14 +290,6 @@ form button {
 
 form button:hover {  
     background-color: var(--accent-color2);  
-}  
-
-.map iframe {  
-    width: 100%;  
-    height: 100%;  
-    min-height: 380px;  
-    border: none;  
-    border-radius: 8px;  
 }  
 
 .image {  
@@ -324,273 +314,4 @@ form button:hover {
     width: 100%;  
     object-fit: cover;  
     border-radius: 8px;  
-}  
-
-.address {  
-    text-align: center;  
-    max-width: 600px;  
-    margin: 0 auto 2rem;  
-}
-h2{
-    text-align: center;
-    background-color: var(--accent-color2);
-    padding: 10px;
-    margin: 10px;
-    color: var(--headers-color);
-    width: 100%;
-}
-    
-
-footer {
-    border-top: 2px solid gray;
-    text-align: center;
-    color: var(--accent1-color);
-    display: flex;
-    justify-content: space-between;  
-    align-items: center;
-    padding: 1.5rem 2rem;
-    margin-top: 3rem;
-}
-
-
-nav ul {
-    display: flex;
-    justify-content: flex-end;  
-    align-items: center;
-    gap: 1.5rem;                
-    list-style: none;           
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li a {
-    text-decoration: none;
-    font-weight: 600;
-    color: darkblue;
-}
-
-.history {
-    background-color: #f5f5f5;
-    padding: 2rem;
-    border-radius: 12px;
-    margin: 0 1.5rem 1.5rem 0;
-}
-
-
-.history h2 {
-    margin-bottom: 0.5rem;
-}
-
-
-.history img {
-    width: 200px;                  
-    height: auto;
-    border-radius: 10px;
-    float: right;
-    margin: 0 0 1rem 2rem;
-}
-
-
-
-.history p {
-    line-height: 1.6;
-    font-size: 1.1rem;
-}
-
-
-.history::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-
-.adventures {
-    padding: 2rem;
-    background-color: #f9f9f9;
-}
-
-.adventures h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: var(--headers-color);
-}
-
-
-
-.adventure-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1.5rem;
-}
-
-
-.adventure-grid figure {
-    text-align: center;
-    background-color: white;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-
-.adventure-grid img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.adventure-grid figcaption {
-    margin-top: 0.5rem;
-    font-weight: 600;
-    color: #333;
-}
-
-footer.socialmedia {
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-}
-
-footer .socialmedia img {
-    width: 32px;
-}
-
-
-/* contact page styling */
-
-.contact-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 2rem;
-    width: 100%;
-}
-
-.map{
-    flex: 1 1 48%;
-}
-
-
-form {
-    /*display: grid;
-    grid-template-columns: 1fr 1fr; */
-    gap: 1.5rem;
-    background: #f9f9f9;
-    padding: 2rem;
-    border-radius: 8px;
-    margin-top: 2rem;
-    flex: 1 1 48%;
-
-}
-
-/* Form items */
-.form-item {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.form-item label {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-
-
-.form-item label input[type="checkbox"]{
-    margin-right: 0.5rem;
-    margin-left: 0;
-    vertical-align: middle;
-} 
-
-/* Make these items span full width when needed */
-.column2 {
-    grid-column: span 2;
-}
-
-/* Text inputs and textarea styling */
-input[type="text"],
-input[type="email"],
-textarea {
-    padding: 0.7rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
-}
-
-/* Radio buttons spacing */
-.form-item input[type="radio"] {
-    margin-right: 0.5rem;
-    margin-left: 0;
-}
-
-/* Submit button full width */
-form button {
-    grid-column: span 2;
-    padding: 1rem;
-    background-color: var(--accent1-color);
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 1.1rem;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: var(--accent-color2);
-}
-
-/* Contact page Map */
-
-.map iframe {
-    width: 100%;
-    height: 100%;
-    min-height: 380px;
-    border: none;
-    border-radius: 8px;
-}
-
-/* Contact page employee images section */
-.image {
-    margin-top: 3rem;
-}
-
-.image h2 {
-    margin-bottom: 1.5rem;
-}
-
-/* 3-column grid for employee profiles */
-.image .adventure-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-}
-
-/* Style each employee box */
-.image figure {
-    text-align: center;
-}
-
-.image figure img {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2rem;
-}
-
-.address{
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto 2rem;
 }
