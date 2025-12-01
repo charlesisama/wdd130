@@ -240,6 +240,15 @@ footer .socialmedia img {
 
 /* contact page styling */
 
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+}
+
 .map{
     flex: 1 1 48%;
 }
