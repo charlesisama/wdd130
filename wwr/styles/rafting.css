@@ -240,7 +240,7 @@ footer .socialmedia img {
 
 /* contact page styling */
 
-.contact-wrapper {
+.contact-wrap {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
