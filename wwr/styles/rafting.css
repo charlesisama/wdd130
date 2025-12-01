@@ -260,7 +260,7 @@ form {
 /* Form items */
 .form-item {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 0.5rem;
 }
 
