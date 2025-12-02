@@ -251,10 +251,10 @@ footer .socialmedia img {
     font-size: 1rem;
 }
 
-.form-item input[type="checkbox"],
+/*.form-item input[type="checkbox"],
 .form-item input[type="radio"] {
     margin-right: 0.5rem;
-}
+} */
 
 .column2 {
     grid-column: 1 / -1;
