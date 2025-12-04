@@ -453,9 +453,7 @@ form button:hover {
     line-height: 1.5;
 }
 
-/******************************
-       TRIPS PAGE STYLING
-******************************/
+/*TRIPS PAGE STYLING*/
 
 /* CALL TO ACTION */
 .trip-action {
@@ -571,6 +569,3 @@ form button:hover {
     font-weight: bold;
 }
 
-.trip-table tr:nth-child(even) {
-    background-color: #fafafa;
-}
