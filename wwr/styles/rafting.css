@@ -331,28 +331,28 @@ form button:hover {
 
 /* HOME PAGE STYLING */
 /* HERO SECTION */
-.hero {
+.hero-home {
     position: relative;
     margin-bottom: 2rem;
     border-radius: 10px;
     overflow: hidden;
 }
 
-.hero img {
+.hero-home img {
     width: 100%;
     height: auto;
     display: block;
 }
 
 .hero-msg {
-    position: absolute;
-    top: 20px;
-    padding:  0.7rem 1.2rem;
-    background-color: var(--accent-color2);
-    opacity: 0.9;
+    position: absolute;  
+    top: 20px;  
+    width: 100%;  
+    padding: 5px;  
+    text-align: center;  
+    opacity: 0.9;  
+    background-color: var(--accent-color2);  
     color: var(--headers-color);
-    font-size: 1.8rem;
-    text-align: center;
 }
 
 /* NEWSLETTER SECTION */
