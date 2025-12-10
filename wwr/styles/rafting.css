@@ -429,6 +429,14 @@ form button:hover {
     padding: 1rem 0;
 }
 
+.feature-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+
 .feature-item{
     background: #fdfdfd;
     border-radius: 10px;
