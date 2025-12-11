@@ -424,6 +424,13 @@ form button:hover {
 }
 
 /* FEATURE GRID SECTION */
+.home-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
 .features{
     margin-top: 2rem;
     padding: 1rem 0;
